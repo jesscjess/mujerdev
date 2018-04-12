@@ -1,0 +1,7 @@
+<h2>{{title}}</h2>
+
+<ul>
+  {{#each links as |link|}}
+    <li {{action "showLink" link}}>{{link.name}}</li>
+  {{/each}}
+</ul>

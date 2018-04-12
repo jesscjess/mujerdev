@@ -1,0 +1,51 @@
+$darkest-colour: #969395;
+$dark-colour: #FF8A76;
+$light-colour: #E4E7F1;
+$lightest-colour: #F6F6F6;
+
+body,
+html {
+    overflow: hidden;
+    font-family:  sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+  margin: 20px 40px; 
+  height: 500px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.mujerdev{
+  text-align: center;
+  text-transform: uppercase;
+
+  a, a:visited{
+    text-decoration: none;
+    color: $dark-colour;
+  }
+}
+
+// Tutorials 
+.flex-container{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.left{
+  width: 30%;
+  background-color: $dark-colour;
+}
+
+.right{
+  flex: 1;
+  background-color: $light-colour;
+}
