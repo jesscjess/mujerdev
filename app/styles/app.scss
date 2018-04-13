@@ -22,6 +22,10 @@ body{
   overflow-y: auto;
 }
 
+.container, .ember-view{
+  height: calc(100vh - 80px);
+}
+
 
 .mujerdev{
   text-align: center;
@@ -40,14 +44,45 @@ body{
   align-items: center;
 }
 
+.left, .right{
+  margin: 10px 20px;
+  border-radius: 25px;
+}
+
 .left{
   width: 35%;
   height: 100%;
   background-color: $dark-colour;
+
+  h2, ul{
+    color: $lightest-colour;
+    padding: 10px;
+  }
+
+  ul{
+    padding: 10px 30px;
+  }
+
+  li{
+    list-style-type: decimal;
+    padding: 5px 0px;
+    color: $light-colour;
+    font-family: 'Comfortaa', cursive;
+  }
 }
 
 .right{
   flex: 1;
   height: 100%;
   background-color: $light-colour;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+
+  video{
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+  }
 }

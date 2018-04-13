@@ -1,8 +1,13 @@
 <div class="flex-container">
   <div class="left">
-    {{link-list title="List of Tutorials" links=model}}
+    <h2>List of Tutorials</h2>
+    <ul>
+      {{#each links as |link|}}
+      <li {{action "openTutorial" link.url}}>{{link.name}}</li>
+      {{/each}}
+    </ul>
   </div>
   <div class="right">
-    RIGHT!!
+    <video id="video" controls="" autoplay="" name="media"><source src="{{chosenOne}}" type="video/mp4"></video>
   </div>
 </div>
